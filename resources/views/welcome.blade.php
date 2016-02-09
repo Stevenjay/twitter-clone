@@ -11,9 +11,9 @@
             }
 
             body {
-                margin: 0;
+                margin: 0 auto;
                 padding: 0;
-                width: 100%;
+                width: 80%;
                 display: table;
                 font-weight: 100;
                 font-family: 'Lato';
