@@ -24,6 +24,14 @@
 
 </head>
 <body>
+	<nav>
+		<ul>
+			<li><a href="/">Home</a></li>
+			<li><a href="/contact">Contact Us</a></li>
+			<li><a href="/register">Register</a></li>
+			<li><a href="/login">Login</a></li>
+		</ul>
+	</nav>
 	@yield('content')
 </body>
 </html>
