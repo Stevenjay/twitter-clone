@@ -41,6 +41,11 @@ class ProfileController extends Controller
 
     	//Find the user
     	$user = User::where('username', '=', $username)->firstOrFail();
-    	return view('profile.show', compact('user'));
+
+        $userPosts = $user->tweets()->get();
+
+        // return $userPosts->get();
+
+    	return view('profile.show', compact('user', 'userPosts'));
     }
 }
