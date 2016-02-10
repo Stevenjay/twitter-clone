@@ -12,13 +12,18 @@
 {!! csrf_field() !!}
 
 	<div>
+		<label for="name">Username: </label>
+		<input type="text" name="username" id="username" placeholder="Bababooye" value="{{ old('username') }}">
+	</div>
+
+	<div>
 		<label for="name">Full name: </label>
-		<input type="text" name="name" id="name" placeholder="Howard Stern">
+		<input type="text" name="name" id="name" placeholder="Howard Stern" value="{{ old('name') }}">
 	</div>
 
 	<div>
 		<label for="email">E-mail: </label>
-		<input type="email" name="email" id="email" placeholder="howard@sirius.com">
+		<input type="email" name="email" id="email" placeholder="howard@sirius.com" value="{{ old('email') }}">
 	</div>
 
 	<div>
