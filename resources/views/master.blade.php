@@ -20,6 +20,15 @@
                 font-family: 'Lato';
             }
 
+            #profilepic {
+            	float: left;
+            }
+
+            #profilestats {
+            	clear: both;
+            	margin-left: 40px;
+            }
+
         </style>
 
 </head>
