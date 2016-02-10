@@ -14,7 +14,7 @@
 
 <h2>Write a tweet</h2>
 
-<form action="/account/new-tweet" method="post">
+<form action="/profile/new-tweet" method="post">
 
 	{!! csrf_field() !!}
 
