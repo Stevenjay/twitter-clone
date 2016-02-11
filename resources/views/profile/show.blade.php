@@ -20,8 +20,20 @@
 @foreach( $userPosts as $tweet )
 
 	<article class="tweet">
+		<hr>
 		<p>{{ $tweet->content }}</p>
 		<small>Posted: {{ $tweet->created_at }} by {{ $tweet->user->name }}</small>
+
+		<h2>Comments: </h2>
+		@forelse( $tweet->comments as $comment )
+		<article class="comment">
+			<p>{{ $comment->content }}</p>
+			<small>Written by {{ $comment->user->name }}</small>
+		</article>
+		@empty
+		<p>Reply First</p>
+		@endforelse
+		<hr>
 	</article>
 
 @endforeach
