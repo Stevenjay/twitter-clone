@@ -66,7 +66,7 @@ class ProfileController extends Controller
 
         $comment->save();
 
-        return 'good to go';
+        return back();
 
     }
 }
